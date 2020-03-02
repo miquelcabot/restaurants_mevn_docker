@@ -1,0 +1,34 @@
+{
+  "name": "cronmap",
+  "version": "1.0.0",
+  "description": "Xarxa social de creació d'esdeveniment a Google Maps. Fet amb MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miquelcabot/cronmap.git"
+  },
+  "keywords": [
+    "mern",
+    "cronmap",
+    "googlemaps"
+  ],
+  "author": "Miquel A. Cabot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miquelcabot/cronmap/issues"
+  },
+  "homepage": "https://github.com/miquelcabot/cronmap#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
