@@ -1,0 +1,29 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    volumes: ["./db-data:/data/db"]
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: cronmap
+      MONGO_INITDB_ROOT_PASSWORD: cronmap
+    networks:
+      - default
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    depends_on:
+      - mongo
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: cronmap
+      ME_CONFIG_MONGODB_ADMINPASSWORD: cronmap
+    networks:
+      - default
+
+networks:
+  default:
