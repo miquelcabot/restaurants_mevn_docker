@@ -21,6 +21,6 @@ Executar MongoDB i Mongo-Express
 docker-compose up -d
 ```
 Per accedir a Mongo-Express:
-[http:\\localhost:8081](http:\\localhost:8081)
+[http://localhost:8081](http://localhost:8081)
 - Usuari: ```cronmap```
 - Password: ```cronmap```
