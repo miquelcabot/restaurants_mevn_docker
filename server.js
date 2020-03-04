@@ -20,7 +20,7 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
 // Use Routes
 app.use('/api/tags', tags);
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 
 app.listen(
     port, 
