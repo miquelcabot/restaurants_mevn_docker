@@ -19,7 +19,7 @@ services:
         restart: always
         volumes:
             - ./db-data:/data/db
-            - ./db-init/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+            - ./db-init:/docker-entrypoint-initdb.d
         ports:
             - '27017:27017'
         environment:

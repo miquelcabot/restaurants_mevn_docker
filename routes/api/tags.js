@@ -2,14 +2,14 @@ const express = require('express');
 
 const router = express.Router();
 
-// Tag Model
-const Tag = require('../../models/Tag')
+// Tags Model
+const Tags = require('../../models/Tags')
 
 // @route   GET api/tags
 // @desc    Get all tags
 // @access  Public
 router.get('/', (req, res) => {
-    Tag.find()
+    Tags.find()
         .sort({ name: 1 })
         .then(items => res.json(items));
 });
