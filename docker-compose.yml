@@ -8,7 +8,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile_client
-        container_name: cronmap_client
+        container_name: restaurants_client
         volumes: ['./client:/usr/src/app']
         restart: always
         ports:
@@ -19,7 +19,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile_server
-        container_name: cronmap_server
+        container_name: restaurants_server
         volumes: ['./server:/usr/src/app']
         restart: always
         ports:
@@ -28,7 +28,7 @@ services:
             - mongo
     mongo:
         image: mongo
-        container_name: mongo
+        container_name: restaurants_mongo
         restart: always
         volumes:
             - ./db-data:/data/db
@@ -36,22 +36,22 @@ services:
         ports:
             - '27017:27017'
         environment:
-            MONGO_INITDB_DATABASE: cronmap
-            MONGO_INITDB_ROOT_USERNAME: cronmap
-            MONGO_INITDB_ROOT_PASSWORD: cronmap
+            MONGO_INITDB_DATABASE: restaurants
+            MONGO_INITDB_ROOT_USERNAME: restaurants
+            MONGO_INITDB_ROOT_PASSWORD: restaurants
         networks:
             - default
     mongo-express:
         image: mongo-express
-        container_name: mongo-express
+        container_name: restaurants_mongo-express
         restart: always
         ports:
             - 8081:8081
         depends_on:
             - mongo
         environment:
-            ME_CONFIG_MONGODB_ADMINUSERNAME: cronmap
-            ME_CONFIG_MONGODB_ADMINPASSWORD: cronmap
+            ME_CONFIG_MONGODB_ADMINUSERNAME: restaurants
+            ME_CONFIG_MONGODB_ADMINPASSWORD: restaurants
         networks:
         - default
 

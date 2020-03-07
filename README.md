@@ -1,5 +1,5 @@
-# cronmap
-Xarxa social de creació d'esdeveniment a Google Maps. Fet amb MERN stack
+# restaurants_mevn_docker
+Web de restaurants amb MEVN sobre Docker.
 
 ## Quick Start
 
@@ -22,5 +22,5 @@ docker-compose up -d
 ```
 Per accedir a Mongo-Express:
 [http://localhost:8081](http://localhost:8081)
-- Usuari: ```cronmap```
-- Password: ```cronmap```
+- Usuari: ```restaurants```
+- Password: ```restaurants```

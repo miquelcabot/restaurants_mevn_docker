@@ -1,3 +1,3 @@
 module.exports = {
-    mongoURI: 'mongodb://cronmap:cronmap@mongo:27017/cronmap'
+    mongoURI: 'mongodb://restaurants:restaurants@mongo:27017/restaurants'
 }

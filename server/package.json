@@ -1,7 +1,7 @@
 {
-  "name": "cronmap",
+  "name": "restaurants_mevn_docker",
   "version": "1.0.0",
-  "description": "Xarxa social de creació d'esdeveniment a Google Maps. Fet amb MERN stack",
+  "description": "Web de restaurants amb MEVN sobre Docker",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,19 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miquelcabot/cronmap.git"
+    "url": "git+https://github.com/miquelcabot/restaurants_mevn_docker.git"
   },
   "keywords": [
-    "mern",
-    "cronmap",
+    "mevn",
+    "docker",
+    "restaurants",
     "googlemaps"
   ],
   "author": "Miquel A. Cabot",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miquelcabot/cronmap/issues"
+    "url": "https://github.com/miquelcabot/restaurants_mevn_docker/issues"
   },
-  "homepage": "https://github.com/miquelcabot/cronmap#readme",
+  "homepage": "https://github.com/miquelcabot/restaurants_mevn_docker#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",

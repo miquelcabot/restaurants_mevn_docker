@@ -28,12 +28,12 @@ class AppNavbar extends Component {
             <div>
                 <Navbar color="dark" dark expand="sm" className="mb-5">
                     <Container>
-                        <NavbarBrand href="/">Cronmap</NavbarBrand>
+                        <NavbarBrand href="/">Restaurants</NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="http://github.com/miquelcabot/cronmap">
+                                    <NavLink href="http://github.com/miquelcabot/restaurants_mevn_docker">
                                         GitHub
                                     </NavLink>
                                 </NavItem>
