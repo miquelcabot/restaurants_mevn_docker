@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const tags = require('./routes/api/tags');
 
@@ -8,6 +9,8 @@ const app = express();
 
 // BodyParser middleware
 app.use(bodyParser.json());
+// CORS middleware
+app.use(cors());
 
 // DB Config
 const db = require('./config/keys').mongoURI;
