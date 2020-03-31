@@ -24,3 +24,13 @@ Per accedir a Mongo-Express:
 [http://localhost:8081](http://localhost:8081)
 - Usuari: ```restaurants```
 - Password: ```restaurants```
+
+Per accedir a consola de Mongo:
+```
+docker exec -it restaurants_mongo mongo --username restaurants --password restaurants
+help
+show dbs
+use restaurants
+show collections
+db.tags.find()
+```
